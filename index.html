@@ -1,390 +1,289 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>K Khan Homepage</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Quasipolynomial aka Kashif Khan's Homepage">
+        <meta name="author" content="Kashif Khan">
+        <title>Kashif Khan Homepage</title>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="css/creative.min.css" rel="stylesheet">
+
     </head>
-    <body>
-        <style>
-            html, body{
-                height:100%;
-                width:100%;
-                margin:0;
-                padding:0;
-            }
-            body{
-                background: url("/img/andromeda_compressed.jpg") repeat-y fixed 0 0/ 100% auto transparent;
-                font-family: 'Open Sans', sans-serif;
-            }
-            .container-fluid-bounded-lg{
-                max-width:1240px;
-            }
-            .thumbnail-square{
-                width: 100%;
-                height: 0;
-                padding-bottom: 100%;
-                display:block;
-            }
-            .thumbnail-rec{
-                width: 100%;
-                height: 0;
-                padding-bottom: 40%;
-                display:block;
-            }
-            .opc{
-                padding-top:30px;
-                padding-bottom: 60px;
-                background:#fff;
-                opacity: 0.9;
-                filter: alpha(opacity=90);
-            }
-            .navbar{
-                margin:0;
-            }
-            .page-header{
-                border-bottom:3px solid #aaa;
-                margin:0;
-                padding:20px;
-                background:#fff
-            }
-            #me{
-                height:100px;
-                width:100px;
-            }
-            .section{
-                border-bottom:3px solid #eee;
-                padding:20px 0 30px 0;
-            }
-            .padding-vertical{
-                padding:30px 0;
-            }
-            .whi-bg{
-                background:#fff;
-            }
+    <body id="page-top">
 
-            .full{
-                display: table;
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-            .full-center{
-                display: table-cell;
-                text-align: center;
-                vertical-align: middle;
-            }
-            #a{
-                background: url("/img/andromeda.jpg") 50% 50% / cover no-repeat scroll;
-            }
-            #a p{
-                color:#fff;
-            }
-
-            #b{
-                background:#fff;
-            }
-
-            #c{
-                background: url("/img/andromeda-2.jpg") 50% 50% / cover no-repeat scroll;
-                background: #ccc;
-            }
-            #e{
-                background: url("/img/andromeda-2.jpg") 50% 50% / cover no-repeat scroll;
-                background: #273038;
-            }
-            h1{
-                text-transform:uppercase;
-                font-size:7.5em;
-                font-weight:bold;
-            }
-            h2{
-                font-size:5em;
-                font-weight:bold;
-            }
-            @media(max-width:767px){
-                h1{
-                    font-size:4em;
-                }
-                h2{
-                    font-size:3em;
-                }
-
-            }
-            .whi-c{
-                color:#fff;
-            }
-            .blk-c{
-                color:#000;
-            }
-            .img-face{
-                margin:40px auto;
-            }
-            .tagline{
-                font-weight:bold;
-                letter-spacing:0.05em;
-                margin: 20px 0;
-            }
-            .tagline u{
-                text-decoration: none;
-                border-bottom: 3px solid #ccc;
-            }
-            #a a{
-                color:#fff;
-                text-align: center;
-                display:inline-block;
-                width:150px;
-                padding:20px 0;
-                border: 3px solid #fff;
-                font-size:15px;
-                font-weight:bold;
-            }
-            .list-inline li{
-                padding:5px;
-            }
-            .email{
-                display: block;
-                background: rgba(0, 0, 0 ,0.7);
-                padding: 5px;
-                width: 200px;
-                margin: auto;
-            }
-        </style>
-        <header class="navbar navbar-static-top navbar-inverse hidden">
-            <div class="container-fluid container-fluid-bounded-lg">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <nav class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href='https://www.linkedin.com/in/kashifrazakhan'>LinkedIn</a></li>
-                        <li><a href='#e'>Github</a></li>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Kashif Khan</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
+            </div>
+        </nav>
+
+        <header class="masthead text-center text-white d-flex">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h1 class="text-uppercase">
+                            <strong>Building you better software</strong>
+                        </h1>
+                        <hr>
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <p class="text-faded mb-5">
+                            Use my expertise to help you acheive goals in the tech industry. </p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                    </div>
+                </div>
             </div>
         </header>
 
-        <div id='a' class='full'>
-            <div class='full-center whi-c'>
-                <h1>Kashif Khan</h1>
-                <ul class="list-inline list-unstyled" style="display:inline-block;" >
-                  <li><a href='https://www.linkedin.com/in/kashifkhanpublic/'>LinkedIn</a></li>
-                  <li><a href='https://github.com/quasipolynomial'>Github</a></li>
-                    <li><a href="mailto:info@kashifkhan.me?Subject=Enquiry" target="_top">Enquiries</a></li>
-                </ul>
-                <span class="email">info@kashifkhan.me</span>
-            </div>
-        </div>
-      <!--
-        <div id='b' class='full'>
-            <h2 class='text-center'>About me</h2>
-            <img class='img-circle center-block img-face' src="me.jpg" alt="piccy." height='200' width='200'/>
-            <span class='text-center center-block tagline'><u>Computer Scientist, London.</u></span>
-            <div class='container' style='padding-bottom:20px; border-bottom: 3px solid #ccc;'>
-                <div class='row'>
-                    <div class='col-xs-6' >
-                        <h3 class='text-left'>Past</h3>
-                        <ul class='text-left list-unstyled'>
-                            <li>Originally from Kashmir.</li>
-                            <li>Raised in Hertfordshire.</li>
-                            <li>Graduated from Queen Mary, UOL, with honours.</li>
-                        </ul>
-                    </div>
-                    <div class='col-xs-6'>
-                        <h3 class='text-right'>Present</h3>
-                        <ul class='text-right list-unstyled'>
-                            <li>Aspiring developer.</li>
-                            <li>Gym enthusiast.</li>
-                            <li>&nbsp;</li>
-                        </ul>
+        <section class="bg-primary" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading text-white">I've got what you need!</h2>
+                        <hr class="light my-4">
+                        <p class="text-faded mb-4">A Full Stack Developer 
+                            and Computer Scientist, providing services in Web 
+                            Development and Software Development. Using methods that are industry standard and
+                            <a style="color:black; text-decoration: underline;" 
+                               href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a>.
+                            Attained a First Class Bachelors in Computer Science 
+                            and studied Masters. Projects can be viewed below.</p>
+                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
                     </div>
                 </div>
             </div>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-xs-offset-3 col-xs-6'>
-                        <p style='padding:30px 0;'>
-                            <strong>I have yet to finish this site.</strong>
-                            The plan is to create a static site using Jekyll and
-                            also show the tech that I know. But for now, here's
-                            some Lorem ipsum for you to enjoy:
-                            <br/>
-                            <br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Fusce in viverra enim, non accumsan purus.
-                            Duis tincidunt pellentesque tortor. Phasellus nisl
-                            ex, semper in magna nec, efficitur tincidunt justo.
-                            Aenean augue tellus, ultrices sit amet luctus quis,
-                            vehicula a diam. Nulla mollis venenatis lobortis.
-                            Integer molestie dolor ac nibh sodales, eget lobortis
-                            nisi ultrices. Ut rutrum elit quis nisi feugiat molestie.
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">At Your Service</h2>
+                        <hr class="my-4">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+                            <h3 class="mb-3">Front End Dev</h3>
+                            <p class="text-muted mb-0">Whether it's Angular or React. This website was made using Angular 2.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+                            <h3 class="mb-3">Back End Dev</h3>
+                            <p class="text-muted mb-0">From Angular to Zend, I have experience in Symfony, SQL and more.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+                            <h3 class="mb-3">My CV</h3>
+                            <p class="text-muted mb-0">My CV houses some projects that I have worked on professionally.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+                            <h3 class="mb-3">More Than a Dev</h3>
+                            <p class="text-muted mb-0">You have to make your software with love these days!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark text-white" style='padding-bottom:0' id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portfolio</h2>
+                        <hr class="my-4">
+                        <p class="text-muted mb-0" style="padding-bottom:25px;">Hover and click to find out more</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0">
+                <div class="row no-gutters popup-gallery">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Full Stack Web Developer
+                                    </div>
+                                    <div class="project-name">
+                                        Firebox
+                                    </div>
+                                    <p class="text-faded mb-4" style="width:80%; margin:auto; margin-top:10px;">Experience as a Full Stack Web Developer.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Web Developer
+                                    </div>
+                                    <div class="project-name">
+                                        All Electrical Distributors
+                                    </div>
+                                    <p class="text-faded mb-4" style="width:80%; margin:auto; margin-top:10px;">Experience as a Web Developer for a small electrical wholesalers.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Personal Project
+                                    </div>
+                                    <div class="project-name">
+                                        ValueInvestor
+                                    </div>
+                                    <p class="text-faded mb-4" style="width:80%; margin:auto; margin-top:10px;">A project that began at University, which aims to use Value Investing techniques to help casual investors.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Personal Project
+                                    </div>
+                                    <div class="project-name">
+                                        Hephaestus Software
+                                    </div>
+                                    <p class="text-faded mb-4" style="width:80%; margin:auto; margin-top:10px;">Developing software for businesses.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Personal Project
+                                    </div>
+                                    <div class="project-name">
+                                        RapidDeduce
+                                    </div>
+                                    <p class="text-faded mb-4" style="width:80%; margin:auto; margin-top:10px;">Forecasting and Prediction.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+                            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Personal Project
+                                    </div>
+                                    <div class="project-name">
+                                        Cepheus: Distributed AI
+                                    </div>
+                                    <p class="text-faded mb-4" style="width:80%; margin:auto; margin-top:10px;">Using distributed architectures to execute a predictive model.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark text-white">
+            <div class="container text-center">
+                <h2 class="mb-4">See My GitHub Repository</h2>
+                <a class="btn btn-light btn-xl sr-button" href="https://github.com/quasipolynomial">View</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading">Let's Get In Touch!</h2>
+                        <hr class="my-4">
+                        <p class="mb-5">Feel like you want to know more? Give me a call or send an email and I will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--                    <div class="col-lg-4 ml-auto text-center">
+                                            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+                                            <p>kash_32@hotmail.co.uk</p>
+                                        </div>-->
+                    <div class="col-lg-4 ml-auto text-center">
+                        <i class="fa fa-skype fa-3x mb-3 sr-contact"></i>
+                        <p>info@kashifkhan.me</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                        <p>
+                            <a href="mailto:info@kashifkhan.me">info@kashifkhan.me</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fa  fa-3x mb-3 sr-contact fa-linkedin-square"></i>
+                        <p>
+                            <a href="https://www.linkedin.com/in/kashifkhanpublic/">LinkedIn</a>
                         </p>
                     </div>
                 </div>
+                <iframe src="https://snazzymaps.com/embed/31059" width="100%" height="600px" style="margin-top:50px; border:none;"></iframe>
             </div>
-        </div>
-
-        <div id='c' class='whi-c hidden' style='font-weight:bold; display:table; width:100%;'>
-            <h2 class='text-center whi-c'>Yet to come!</h2>
-            <span>Checklist:</span>
-            <ul>
-                <li>
-                    Redesign
-                    <ul>
-                        <li>Angular</li>
-                        <li>Jekyll</li>
-                        <li>Sass</li>
-                    </ul>
-                </li>
-                <li>
-                    Features
-                    <ul>
-                        <li>Blog</li>
-                        <li>Media Gallery</li>
-                        <li>Code Gallery</li>
-                        <li>Project Gallery</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div id='e' class='full'>
-            <h2 class='text-center whi-c'>Get in touch</h2>
-            <p class='text-center whi-c'>
-                Have any questions?
-            </p>
-            <p>
-                <a class='whi-c center-block text-center' href="https://www.linkedin.com/in/kashifrazakhan">
-                    https://www.linkedin.com/in/kashifrazakhan
-                </a>
-            </p>
-        </div>
-
-        <div id="tech" class="section whi-bg hidden">
-            <div class="container-fluid container-fluid-bounded-lg">
-                <div class="row padding-vertical">
-                    <div class="col-xs-12">
-                        <h1 class="text-center">Technology</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-12">
-                        <a href="https://magento.com/" class="thumbnail">
-                            <img src="/img/magento.png" alt="Magento 2"/>
-                        </a>
-                        <p><strong>Magento 2:</strong> Out-of-the-box e-commerce solution.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <a href="https://www.drupal.org/" class="thumbnail">
-                            <img src="/img/drupal.png" alt="Drupal 8"/>
-                        </a>
-                        <p><strong>Drupal 8:</strong> Customisable Content Management System.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <a href="http://framework.zend.com/" class="thumbnail">
-                            <img src="/img/zf2.png" alt="Zend Framework 2"/>
-                        </a>
-                        <p><strong>Zend Framework 2:</strong> PHP Framework.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-12">
-                        <a href="http://getbootstrap.com" class="thumbnail">
-                            <img src="/img/responsive.png" alt="Bootstrap 3"/>
-                        </a>
-                        <p><strong>Responsive Design:</strong> Using Bootstrap 3.</p>
-                    </div>
-                </div>
-                <div class="row" style="padding-top:20px;">
-                    <div class="col-xs-12">
-                        <ul class='list-inline list-unstyled text-center'>
-                            <li><strong>Knowledge of:</strong></li>
-                            <li>Magento 2;</li>
-                            <li>Drupal 8;</li>
-                            <li>Zend Framework 2;</li>
-                            <li>PHP;</li>
-                            <li>AngularJS;</li>
-                            <li>JQuery;</li>
-                            <li>JS;</li>
-                            <li>HTML/CSS;</li>
-                            <li>Bootstrap;</li>
-                            <li>MySQL;</li>
-                            <li>MongoDB;</li>
-                            <li>Django Framework;</li>
-                            <li>Python;</li>
-                            <li>Java;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="proj" class="section whi-bg hidden">
-            <div class="container-fluid container-fluid-bounded-lg">
-                <div class="row padding-vertical" >
-                    <div class="col-xs-12">
-                        <h1 class="text-center">Projects</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4 col-xs-12">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>All Electrical Distributors</h3>
-                                <p>
-                                    An electrical wholesalers based in Hemel Hempstead, Hertfordshire, UK.
-                                </p>
-                                <p>
-                                    <a class="btn btn-primary" role="button">Ongoing project</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-12">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Ohms & Watts Services</h3>
-                                <p>
-                                    An electrical services company based in St. Albans, Hertfordshire, UK.
-                                </p>
-                                <p>
-                                    <a class="btn btn-primary" role="button">Ongoing project</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="cont" class='container whi-bg hidden' style='border:3px solid #eee; border-top:0; padding-bottom:20px;'>
-            <div class='row'>
-                <div class='col-xs-12'>
-                    <h3>Contact</h3>
-                    <p>
-                        Please feel free to contact me.
-                        Whether it's a general question, a development opportunity or programming issue. I am happy to help!
-                    </p>
-                    <p>
-                        LinkedIn:
-                        <a href="https://www.linkedin.com/in/kashifrazakhan">
-                            https://www.linkedin.com/in/kashifrazakhan
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-      -->
-        <footer class='hidden'>
-            <div class='container'>
-                <h6><u><small>K.R.K.</small></u></h6>
-            </div>
+        </section>
+        <footer>
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+            <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <script src="js/creative.min.js"></script>
         </footer>
+
     </body>
 </html>
